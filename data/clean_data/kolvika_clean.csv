@@ -1,4 +1,4 @@
-﻿Форма камня,Длина камня,Ширина камня,gem_price,gem_url,Драгоценность камня,Название камня,Вес камня,Вид,Огранка камня,Облагораживание камня,Происхождение камня,Чистота камня,Сертификат,Глубина камня,Вес пары
+﻿gem_form,Длина камня,Ширина камня,gem_price,gem_url,gem_preciousness,gem_name,gem_weight,gem_view,gem_cutting,gem_enhancement,gem_origin,gem_clarity,gem_sertificate,Глубина камня,Вес пары
 Круг,1.1 мм,1.1 мм,4 руб,https://kolvika.ru/product/fianit-krug-110-mm,,,,,,,,,,,
 Круг,2.0 мм,2.0 мм,5 руб,https://kolvika.ru/product/fianit-krug-200-mm,,,,,,,,,,,
 Круг,1.5 мм,1.5 мм,4 руб,https://kolvika.ru/product/fianit-krug-150-mm,,,,,,,,,,,

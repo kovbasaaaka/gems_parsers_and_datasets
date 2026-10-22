@@ -22,8 +22,14 @@ def delete_empty_columns(df1, df2):
 def delete_unusual_columns(df):
     df.drop(['Изготовим на заказ'], axis=1, inplace=True)
 
+def rename_columns(df1, df2):
+    df1.rename(columns={"Название камня": "gem_name", "Вес камня": "gem_weight", "Огранка камня": "gem_cutting", "Облагораживание камня": "gem_enhancement", "Происхождение камня": "gem_origin", "Вид": "gem_view", "Драгоценность камня": "gem_preciousness", "Чистота камня": "gem_clarity", "Форма камня": "gem_form", "Сертификат": "gem_sertificate"}, inplace=True)
+    df2.rename(columns={"Масса": "gem_weight", "Чистота": "gem_clarity", "Сертификат": "gem_sertificate", "Происхождение": "gem_origin", "Облагораживание": "gem_enhancement", "Форма огранки": "gem_cutting", "Размеры": "gem_size", "Качество огранки": "gem_cut_quality", "Основной цвет": "gem_main_color", "Цена за камень/за карат": "gem_price", "Комплектность": "gem_completeness", "Наименование камня": "gem_name"}, inplace=True)
+
 delete_empty_columns(df1, df2)
 delete_unusual_columns(df2)
+rename_columns(df1, df2)
+
 print('-----ИНФОРМАЦИЯ ПОСЛЕ ОЧИСТКИ ПУСТЫХ ЗНАЧЕНИЙ-----\n')
 print('---KOLVIKA INFO---\n')
 print(f'{df1.shape}\n')
